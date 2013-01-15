@@ -1,0 +1,22 @@
+Instalation d'un environnement de devellopement python dans vim 
+Article Linux Magazine 
+
+Installation :
+    git clone git://github.com/dotvim.git ~/.vim
+
+Creer le symlink:
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+Installer les packages (gentoo):
+    git pep8 ctags rope ruby1.8 rake
+
+Aller dans le repertoire ~/.vim et recuperer les submodules:
+    cd ~/.vim
+    git submodule init
+    git submodule update
+    git submodule foreach git submodule init
+    git submodule foreach git submodule update
+
+Compiler CommandT:
+    cd ~/.vim/bundle/command-t
+    rake make
