@@ -3,16 +3,19 @@
 	url = https://github.com/mitechie/pyflakes-pathogen.git
 [submodule "bundle/minibufexpl"]
 	path = bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
+        url = https://github.com/fholgado/minibufexpl.vim.git
+        ignore = dirty
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/vim-scripts/The-NERD-tree.git
+        url = https://github.com/vim-scripts/The-NERD-tree.git
+        ignore = dirty
 [submodule "bundle/taglist"]
 	path = bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
+        url = https://github.com/vim-scripts/taglist.vim.git
+        ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
