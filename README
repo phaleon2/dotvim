@@ -2,7 +2,7 @@ Instalation d'un environnement de devellopement python dans vim
 Article Linux Magazine 
 
 Installation :
-    git clone git://github.com/dotvim.git ~/.vim
+    git clone git://github.com/phaleon2/dotvim.git ~/.vim
 
 Creer le symlink:
     ln -s ~/.vim/vimrc ~/.vimrc
