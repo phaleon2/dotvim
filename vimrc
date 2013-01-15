@@ -42,6 +42,28 @@ let g:SuperTabDefaultCompletionType = "context"
 "Activation de la visualisation de la documentation
 set completeopt=menuone,longest,preview 
 
+"Activation de la completion pour Django 
+function! SetAutoDjangoCompletion()
+  let l:tmpPath   = split($PWD, '/')
+  let l:djangoVar = tmpPath[len(tmpPath)-1].'.settings'
+  let $DJANGO_SETTINGS_MODULE=djangoVar
+  echo 'Activation de la completion django avec : '.djangoVar
+  return 1
+endfunction
+
+"Activation de la completion pour les lib installées dans virtualenv
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+
 "Amelioration de la recherche avant et arriere avec surlignement du pattern
 map * <Esc>:exe '2match Search /' . expand('<cWORD>') .'/'<CR><Esc>:exe '/' . expand('<cWORD>') .'/'<CR>
 map ù <Esc>:exe '2match Search /' . expand('<cWORD>') . '/'<CR><Esc>:exe '?' . expand('<cWORD>') . '?'<CR>

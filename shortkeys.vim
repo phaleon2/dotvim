@@ -1,7 +1,11 @@
 "Activation/Desactivation de la fenetre d'exploration des fichiers
 map <F9> <Esc>:NERDTreeToggle<CR>
+
 "Affichage Masquage de la fenetre Taglist
 map <F8> <Esc>:TlistToggle<CR>
+
+"Activation de la completion django 
+map<F10> <Esc>:call SetAutoDjangoCompletion()<CR> 
 
 "Ouverture d'une definition de classe/fonction avec rope
 map <F6> <Esc>:RopeGotoDefinition<CR>
