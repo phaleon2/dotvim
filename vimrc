@@ -63,6 +63,10 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
+"Execution des tests unitaires 
+map <silent><Leader>tf <Esc>:Pytest file<CR>
+map <silent><Leader>tc <Esc>:Pytest class<CR>
+map <silent><Leader>tm <Esc>:Pytest method<CR>
 
 "Amelioration de la recherche avant et arriere avec surlignement du pattern
 map * <Esc>:exe '2match Search /' . expand('<cWORD>') .'/'<CR><Esc>:exe '/' . expand('<cWORD>') .'/'<CR>

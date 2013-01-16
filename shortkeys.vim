@@ -15,4 +15,12 @@ map <F7> <Esc>:RopeRename<CR>
 
 "Appel de la fonction de nettoyage d'un fichier enleve les ^M et les tabulations
 map  <F3> <Esc>:call CleanCode()<CR>
-imap <F3> <Esc>:call CleanCode()<CR>i
+imap <F3> <Esc>:call CleanCode()<CR>
+
+"Affichage de l'historique des modifications 
+map <C-h> <Esc>:GundoToggle<Cr>
+
+"Execution des tests unitaires 
+map <silent><Leader>tf <Esc>:Pytest file<CR>
+map <silent><Leader>tc <Esc>:Pytest class<CR>
+map <silent><Leader>tm <Esc>:Pytest method<CR>
