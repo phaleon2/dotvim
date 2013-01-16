@@ -51,6 +51,10 @@ function! SetAutoDjangoCompletion()
   return 1
 endfunction
 
+"Activation des snippets pour django pour les fichiers html et python
+autocmd FileType python set ft=python.django
+autocmd FileType html set ft=htmldjango.html
+
 "Activation de la completion pour les lib installées dans virtualenv
 py << EOF
 import os.path

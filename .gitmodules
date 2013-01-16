@@ -34,3 +34,10 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+        url = https://github.com/msanders/snipmate.vim.git
+        ignore = dirty
+[submodule "bundle/snipmate_for_django"]
+	path = bundle/snipmate_for_django
+	url = https://github.com/robhudson/snipmate_for_django.git
