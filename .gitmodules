@@ -41,3 +41,6 @@
 [submodule "bundle/snipmate_for_django"]
 	path = bundle/snipmate_for_django
 	url = https://github.com/robhudson/snipmate_for_django.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
