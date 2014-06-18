@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/data2/projects/phaleon/phaleon/fichiers-json'
+let g:netrw_dirhist_2='/home/ericb/.marks'
+let g:netrw_dirhist_3='/data2/projects/Django--an-app-at-a-time-fran-ais/apps/app1_hello'
+let g:netrw_dirhist_4='/data2/projects/Django--an-app-at-a-time-fran-ais/apps/app2_hello_again'
