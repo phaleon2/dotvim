@@ -1,3 +1,4 @@
+
 Instalation d'un environnement de devellopement python dans vim 
 Article Linux Magazine 
 
@@ -8,7 +9,7 @@ Creer le symlink:
     ln -s ~/.vim/vimrc ~/.vimrc
 
 Installer les packages (gentoo):
-    git pep8 ctags rope ruby1.8 rake
+    git pep8 ctags rope ruby rake
 
 Aller dans le repertoire ~/.vim et recuperer les submodules:
     cd ~/.vim
